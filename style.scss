@@ -1,9 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
 h1 {
     margin-top: 1rem;
+}
+
+header {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+  
+header::before {
+    content: '';
+    background-image: url('your-background-image.jpg'); /* Replace with your background image URL */
+    opacity: 0.5;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+/* CSS for the logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+
+    embed {
+        width: 5rem;
+    }
+}
+
+/* CSS for the navigation menu */
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
